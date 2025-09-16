@@ -1,0 +1,31 @@
+// Estilos globales aquí
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mx-1 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.my-1 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
