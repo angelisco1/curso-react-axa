@@ -2,6 +2,7 @@ import Tema01ComponentesYPropiedades from './tema01-componentes-y-propiedades/Te
 import Tema02Eventos from './tema02-eventos/Tema02Eventos'
 import Tema03Estado from './tema03-estado/Tema03Estado'
 import Tema04UseEffect from './tema04-use-effect/Tema04UseEffect'
+import Tema05Formularios from './tema05-formularios/Tema05Formularios'
 
 const App = () => {
   return (
@@ -10,7 +11,8 @@ const App = () => {
       {/* <Tema01ComponentesYPropiedades /> */}
       {/* <Tema02Eventos /> */}
       {/* <Tema03Estado /> */}
-      <Tema04UseEffect />
+      {/* <Tema04UseEffect /> */}
+      <Tema05Formularios />
     </div>
   )
 }
