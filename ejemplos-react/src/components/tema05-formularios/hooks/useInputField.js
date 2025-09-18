@@ -14,6 +14,10 @@ const useInputField = (initialValue, validations = {}) => {
     const mensajesError = []
 
     Object.entries(validations).forEach((entry) => {
+      // {nombre: 'Charly', edad: 49}
+      // const {nombre, edad} = persona
+
+      // ['minlength', 3]
       const [validationName, validationData] = entry
 
       if (validationName === 'minLength' && value.length < validationData) {

@@ -8,9 +8,9 @@ const Tema05Formularios = () => {
     <div>
       <h2>Tema 05: Formularios</h2>
 
-      <FormularioControlado />
+      {/* <FormularioControlado /> */}
 
-      {/* <FormularioNoControlado /> */}
+      <FormularioNoControlado />
     </div>
   )
 }

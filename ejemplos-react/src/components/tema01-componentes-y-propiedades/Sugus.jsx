@@ -2,6 +2,8 @@ import './Sugus.css'
 
 
 // Desestructuración
+// props = {color: 'blue', sabor: 'piña'}
+// const Sugus = (props) => {
 const Sugus = ({ color = 'yellow', sabor = 'limón' }) => {
   // console.log(props)
 
