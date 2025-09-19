@@ -1,39 +1,31 @@
 import { useEffect, useState } from "react"
 import { Link, Outlet, useSearchParams } from "react-router"
 
-const Home = () => {
-  const [vendehumos, setVendehumos] = useState([])
-  const [qParams, setQParams] = useSearchParams()
-  console.log(qParams.get('numVotos'))
+const Ranking = () => {
+  // const [vendehumos, setVendehumos] = useState([])
+  // const [qParams, setQParams] = useSearchParams()
+  // console.log(qParams.get('numVotos'))
   // console.log(qParams.keys().next())
   // console.log(qParams.values().next())
 
-  const categoriaSeleccionada = qParams.get('categoria')
+  // const categoriaSeleccionada = qParams.get('categoria')
+
+
 
   // useEffect(() => {
-  //   fetch('http://localhost:3000/vendehumos')
+  //   fetch('http://localhost:3000/vendehumos?categoria=' + categoriaSeleccionada)
   //     .then((resp) => {
   //       return resp.json()
   //     })
   //     .then((data) => {
   //       setVendehumos(data)
   //     })
-  // }, [])
-
-  useEffect(() => {
-    fetch('http://localhost:3000/vendehumos?categoria=' + categoriaSeleccionada)
-      .then((resp) => {
-        return resp.json()
-      })
-      .then((data) => {
-        setVendehumos(data)
-      })
-  }, [qParams])
+  // }, [qParams])
 
   return (
     <div>
-      <h2>Home</h2>
-
+      <h2>Ranking</h2>
+{/*
       <select value={categoriaSeleccionada} onChange={(event) => setQParams({categoria: event.target.value})}>
         <option value="crypto">Crypto</option>
         <option value="trading">Trading</option>
@@ -51,11 +43,10 @@ const Home = () => {
           ))}
         </ul>
 
-        <Outlet className="mx-1" />
+      </div> */}
 
-      </div>
     </div>
   )
 }
 
-export default Home
+export default Ranking

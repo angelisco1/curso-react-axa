@@ -1,0 +1,11 @@
+{
+  "vendehumos": [
+    { "id": 1, "nombre": "Vendehumo 1", "categoria": "crypto", "numVotos": 2, "imagen": "", "usuarioId": 1 },
+    { "id": 2, "nombre": "Vendehumo 2", "categoria": "trading", "numVotos": 23, "imagen": "", "usuarioId": 2 },
+    { "id": 3, "nombre": "Vendehumo 3", "categoria": "ingles", "numVotos": 18, "imagen": "", "usuarioId": 1 }
+  ],
+  "usuarios": [
+    { "id": 1, "username": "cfalco", "password": "1234", "nombre": "Charly Falco" },
+    { "id": 2, "username": "mike", "password": "1234", "nombre": "Mike Kozinski" }
+  ]
+}
