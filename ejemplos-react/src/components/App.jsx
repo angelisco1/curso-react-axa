@@ -6,6 +6,7 @@ import Tema04UseEffect from './tema04-use-effect/Tema04UseEffect'
 import Tema05Formularios from './tema05-formularios/Tema05Formularios'
 import Tema06UseRef from './tema06-use-ref/Tema06UseRef'
 import Tema07ContextApi from './tema07-context-api/Tema07ContextApi'
+import Tema08UseReducer from './tema08-use-reducer/Tema08UseReducer'
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       {/* <Tema05Formularios /> */}
       {/* <EjercicioCV /> */}
       {/* <Tema06UseRef /> */}
-      <Tema07ContextApi />
+      {/* <Tema07ContextApi /> */}
+      <Tema08UseReducer />
     </div>
   )
 }

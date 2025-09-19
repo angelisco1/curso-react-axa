@@ -3,6 +3,9 @@ import FormLogin from "./FormLogin"
 import Header from "./Header"
 import { UsuarioContext } from "../contexts"
 import Bienvenida from "./Bienvenida"
+import { Route, Routes } from "react-router"
+import Home from "../pages/Home"
+import NuevoVendehumo from "../pages/NuevoVendehumo"
 
 const App = () => {
   const [usuario, setUsuario] = useState(null)
@@ -26,6 +29,11 @@ const App = () => {
       </UsuarioContext.Provider>
 
       {/* {usuario && <Bienvenida />} */}
+
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path="/nuevo-vendehumo" element={<NuevoVendehumo />} />
+      </Routes>
 
     </div>
   )

@@ -1,7 +1,9 @@
-import { useState } from "react"
+import { useMemo, useState } from "react"
 import FormCV from "./FormCV"
 import PreviewCV from "./PreviewCV"
 import FormCV2 from "./FormCV2"
+
+
 
 const EjercicioCV = () => {
   const [nombre, setNombre] = useState('Ángel')
@@ -14,6 +16,18 @@ const EjercicioCV = () => {
     setEmail(datos.email)
   }
 
+  // const getNombreCompleto = () => {
+  //   console.log('PASA POR AQUÍ')
+  //   return `${nombre} ${apellido}`
+  // }
+
+  // const nombreCompleto = getNombreCompleto()
+
+  const nombreCompleto = useMemo(() => {
+    console.log('PASA POR AQUÍ')
+    return `${nombre} ${apellido}`
+  }, [nombre, apellido])
+
   return (
     <div>
       <h2>Ejercicio CV</h2>
@@ -22,7 +36,8 @@ const EjercicioCV = () => {
 
       <FormCV2 nombre={nombre} apellido={apellido} email={email} setNombre={setNombre} setApellido={setApellido} setEmail={setEmail} />
 
-      <PreviewCV nombreCompleto={nombre + ' ' + apellido} email={email} />
+      {/* <PreviewCV nombreCompleto={nombre + ' ' + apellido} email={email} /> */}
+      <PreviewCV nombreCompleto={nombreCompleto} email={email} />
     </div>
   )
 }

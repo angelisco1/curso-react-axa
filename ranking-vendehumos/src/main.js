@@ -1,5 +1,11 @@
+import { BrowserRouter } from 'react-router'
 import ReactDOM from 'react-dom/client'
 import App from './components/App'
+import './styles.scss'
 
 ReactDOM.createRoot(document.getElementById('root'))
-  .render(<App />)
+  .render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  )

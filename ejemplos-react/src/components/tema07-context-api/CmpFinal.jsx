@@ -7,11 +7,13 @@ const CmpFinal = () => {
   console.log(idioma)
 
   return (
-    <div>
+    // <React.Fragment>
+    <>
       <h4>Cmp Final</h4>
 
       <p>{traducir('bienvenido', idioma)} Charly</p>
-    </div>
+    </>
+    // </React.Fragment>
   )
 }
 
