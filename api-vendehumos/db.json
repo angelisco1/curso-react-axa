@@ -1,11 +1,68 @@
 {
   "vendehumos": [
-    { "id": 1, "nombre": "Vendehumo 1", "categoria": "crypto", "numVotos": 2, "imagen": "", "usuarioId": 1 },
-    { "id": 2, "nombre": "Vendehumo 2", "categoria": "trading", "numVotos": 23, "imagen": "", "usuarioId": 2 },
-    { "id": 3, "nombre": "Vendehumo 3", "categoria": "ingles", "numVotos": 18, "imagen": "", "usuarioId": 1 }
+    {
+      "id": 1,
+      "nombre": "Vendehumo 1",
+      "categoria": "crypto",
+      "numVotos": 2,
+      "imagen": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "usuarioId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Vendehumo 2",
+      "categoria": "trading",
+      "numVotos": 23,
+      "imagen": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "usuarioId": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Vendehumo 3",
+      "categoria": "ingles",
+      "numVotos": 18,
+      "imagen": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "usuarioId": 1
+    },
+    {
+      "nombre": "Vendehumo 4",
+      "categoria": "crypto",
+      "numVotos": 0,
+      "imagen": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "usuarioId": 1,
+      "id": 4
+    },
+    {
+      "nombre": "Vendehumo 5",
+      "categoria": "ingles",
+      "numVotos": 0,
+      "imagen": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "usuarioId": 1,
+      "id": 5
+    },
+    {
+      "nombre": "asdasd",
+      "categoria": "trading",
+      "numVotos": 0,
+      "imagen": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "usuarioId": 1,
+      "id": 6
+    }
   ],
   "usuarios": [
-    { "id": 1, "username": "cfalco", "password": "1234", "nombre": "Charly Falco" },
-    { "id": 2, "username": "mike", "password": "1234", "nombre": "Mike Kozinski" }
+    {
+      "id": 1,
+      "username": "cfalco",
+      "email": "cfalco",
+      "password": "1234",
+      "nombre": "Charly Falco"
+    },
+    {
+      "id": 2,
+      "username": "mike",
+      "email": "mike",
+      "password": "1234",
+      "nombre": "Mike Kozinski"
+    }
   ]
 }

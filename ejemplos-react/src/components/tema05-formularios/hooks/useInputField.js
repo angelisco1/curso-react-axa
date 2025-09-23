@@ -24,7 +24,7 @@ const useInputField = (initialValue, validations = {}) => {
         mensajesError.push(`Tiene que tener una longitud mínima de ${validationData}`)
       }
 
-      if (validationName === 'email' && !new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/).test(email)) {
+      if (validationName === 'email' && !new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/).test(value)) {
         mensajesError.push(`Tiene que tener un formato de email`)
       }
 

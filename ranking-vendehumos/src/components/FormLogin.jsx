@@ -8,7 +8,7 @@ const usuariosRegistrados = [
 
 
 // const FormLogin = ({onLogin}) => {
-const FormLogin = () => {
+const FormLogin = ({ onLogin }) => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const { setUsuario } = useContext(UsuarioContext)
@@ -17,17 +17,18 @@ const FormLogin = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    const usuarioLogueado = usuariosRegistrados.find(usuario => usuario.username === username && usuario.password === password)
+    // const usuarioLogueado = usuariosRegistrados.find(usuario => usuario.username === username && usuario.password === password)
 
-    if (!usuarioLogueado) {
-      // TODO:
-      return
-    }
+    // if (!usuarioLogueado) {
+    //   // TODO:
+    //   return
+    // }
 
-    delete usuarioLogueado.password
+    // delete usuarioLogueado.password
     // onLogin(usuarioLogueado)
-    setUsuario(usuarioLogueado)
+    // setUsuario(usuarioLogueado)
 
+    onLogin({email: username, password})
   }
 
   return (
